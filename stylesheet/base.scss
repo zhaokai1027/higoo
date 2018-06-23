@@ -1,10 +1,424 @@
 body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,header,nav,footer,menu,section,aside,article,figure,figcaption{margin:0; padding:0;}
-ul,li,ol{list-style:none;}
+ul,li,ol,nav{list-style:none;}
 img,fieldset{border:0; }
-img{display:block;}
+img{display:block;border:0;}
 a{text-decoration:none; color:#333;}
 h1,h2,h3,h4,h5,h6{font-weight:100;}
 body{ font-family:"微软雅黑";margin:0 auto;}
 input,a{outline:none;}
+/*header*/
+header{
+    height:27px;
+    line-height: 27px;
+    background:#f2f2f2;
+}
+.higoo_header{
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size:12px;
+    color:#a1a1a1;
+}
+.higoo_header a{
+    color:#a1a1a1;
+}
+.higoo_header a:hover{
+    color:#e40c57;
+}            
+.header_right>ul>li{
+    padding:0 4px 0 16px;
+    float: left;
+}           
+.ej_hover{
+    width:68px;
+    margin-right:7px;
+    background: url(../images/maxmain.png) no-repeat -170px 11px;
+}
+.second{
+    text-align: center;
+    text-indent: -13px;
+    display: none;
+}
+.header_right>ul>li:nth-child(2){
+    background:url(../images/maxmain.png) no-repeat -272px 7px;
+}          
+.ej:hover{
+    box-shadow: 0 0 3px 1px #dddddd;
+    >a{
+        color:#e40c57;
+    }
+    background:#fff url(../images/maxmain.png) no-repeat -170px -16px;
+}
+/*top*/
+#top{
+    height:97px;
+}
+#top_b{
+    width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+#logo {
+    float: left;
+    width:60px;
+    
+}
+#logo a img{
+    display: block;
+    padding:20px 0 17px;
+}
+.top_right{
+    float: right;
+    width:634px;
+    display: flex;
+    justify-content: space-between;
+    >div:last-child{
+        margin-top:23px;
+        a{ display: block;
+            width:158px;
+            height:31px;
+            background:url(../images/maxmain.png) no-repeat left top;
+            text-indent: 38px;
+            line-height: 31px;
+            color:#494949;
+            font-size: 12px;
+        }
+        a:hover{
+            color:#e40c57;
+        }
+        
+    }
+}
+.top_right_left{
+    width:373px;
+    margin-top:18px;
+    div:nth-child(1){
+        float: left;
+        border:3px solid #861185;
+        margin-bottom:5px;
+        input:nth-child(1){
+            float: left;
+            width:310px;
+            height:32px;
+            border:0;
+            text-indent: 10px;
+            font-size: 14px;
+        }
+        input:last-child{
+            float: left;
+            width:57px;
+            height:34px;
+            border:0;
+            background: url(../images/search.jpg) no-repeat center/cover;
+        }
+    }
+    div:last-child{
+        float: left;
+        height:18px;
+        font-size: 12px;
+        line-height: 18px;
+        color:#999999;
+        display: flex;
+        a{
+            color:#999999;
+            margin-left:8px;
+            margin-right:9px;
+        }
+        a:hover{
+             color:#e40c57;
+        }
+    }
+}
+/*nav*/
+nav{
+    height:35px;
+    border-bottom:3px solid #861185;
+}
+.nav_nav{
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+}
+/*竖着的*/
+.leftmenu{
+    width:195px;
+    height:38px;
+    position: absolute;
+    background:#000;
+    
+}
+.leftmenu_tit{
+    padding-left:17px;
+    line-height: 38px;
+    i{
+        display: inline-block;
+        width:11px;
+        height:13px;
+        background:url(../images/maxmain.png) no-repeat 0 -61px;
+    }
+    a{
+      font-size:14px;
+      color:#fff;  
+    }
+}
+.left_nemu{
+//  display: none;
+   position: absolute;
+   top:38px;
+   width:195px;
+   height:383px;
+   background:#861185;
+   >div{
+       border-bottom:1px solid #9c1ba0;
+       border-top:1px solid #5c045b;
+       padding:10px;
+   }
+}
+.smallmulu{
+    border-top:0;
+}
+.daohang_biaoti{
+    height:18px;
+    line-height: 18px;
+    font-size:14px;
+    a{
+        color:#e973e8;
+    }
+}
+.daohang_neirong{
+    line-height: 20px;
+    padding-right:10px;
+    font-size:12px;
+    a{
+        color:#ffffff;
+    }
+    a:hover{
+        color:#e973e8;
+    }
+}
+.content{
+//  display: none;
+    width:845px;
+    height:400px;
+    position: absolute;
+    top:0;
+    left:195px;
+    border-bottom:2px solid #861185;
+    background:rgba(255,255,255,.8);
+    >div:nth-child(1),div:nth-child(2){
+        width:245px;
+        padding:0 17px;
+        float: left;
+        
+        dl{
+            padding:10px 0 9px;
+            border-bottom:1px dotted #c8c8c8;
+            dt{
+                line-height: 17px;
+                font-size:12px;
+                a{
+                    color:#000;
+                }
+                
+            }
+            dd{
+                line-height:20px;
+                font-size:12px;
+                a{
+                  color:#898989;
+                  padding-right:12px;
+                }
+                a:hover{
+                    color:#861185;
+                    text-decoration: underline;
+                }
+     
+            }
+        }
+ 
+    }
+    
+    >div:nth-child(2){
+        border-left:1px solid #ebebeb;
+        height:400px;
+        dl:last-child{
+            border-bottom:0;
+           a{
+                color:#861185;
+            } 
+            
+        }
+    }
+    >div:last-child{
+        width:280px;
+        opacity: .8;
+        float: right;
+        img{
+            width:280px;
+            height:400px;
+        }
+        span{
+            position: absolute;
+            top:10px;
+            right:10px;
+            display: block;
+            cursor:pointer;
+            width:18px;
+            height:18px;
+            background:url(../images/maxmain.png) no-repeat 0 -433px;
+        }
+    }
+}
+
+
+/*横着的*/
+.rightnav{
+    width:1002px;
+    height:35px;
+    line-height: 35px;
+    position:absolute;
+    left:195px;
+    font-weight:bold;
+    font-size: 15px;
+    a{
+        float: left;
+        padding:0 20px 0 21px;
+    }
+    .rightnav_hover,a:hover,{
+        background:#e40c57;
+        color:#fff;
+    }
+
+}
+
+
+#main{
+    min-height:600px;
+    background:pink;
+}
+#bottom{
+    height:202px;
+    background:#861185;
+    border-top:5px solid #560155;
+}
+.bottom_con{
+    width:1200px;
+    margin:0 auto;
+    >div{
+        float: left;   
+    }
+}
+.bottom_con_left{
+    display: flex;
+}
+.bottom_con_right{
+    width:191px;
+    height:81px;
+    padding-top:15px;
+    padding-bottom: 8px;
+    padding-left:176px;
+    text-align: left;
+    color: #fff;
+    p:nth-of-type(1){
+        line-height: 46px;
+        font-size: 14px;
+        font-weight: bold;
+        
+    }
+    p:last-of-type{
+        line-height: 28px;
+        font-size: 12px;
+    }
+}
+.bottom_con_left1{
+    width:162px;
+    padding:25px 78px 54px 82px;
+    >p{
+        height:31px;
+        line-height: 31px;
+        margin-bottom:10px;
+        padding-left:36px;
+        color:#fff;
+        font-size:17px;
+    }
+    p:nth-child(1){
+        background:url(../images/maxmain.png) no-repeat -1px -86px;
+    }
+    p:nth-child(2){
+        background:url(../images/maxmain.png) no-repeat -1px -124px;
+    }
+    p:nth-child(3){
+        background:url(../images/maxmain.png) no-repeat -1px -163px;
+        line-height:15px;
+        span:nth-child(1){
+            padding-bottom:7px;
+            font-size:14px;
+            
+        }
+        span:nth-of-type(2){
+            font-size:9px;
+        }
+    }
+}
+.bottom_con_left2{
+    padding-top:17px;
+    width:511px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    a{
+        display: block;
+        color:#fff;
+    }
+    dt{
+        line-height: 38px;
+        font-size:14px;
+        font-weight: bold;
+    }
+    dd{
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+
+
+
+footer{
+    height:140px;
+    padding:30px 0 20px;
+    line-height: 22px;
+    font-size: 12px;
+    color:#000;
+    text-align: center;
+    img{
+        display: inline-block;
+//      padding-top:5px;
+        padding:5px 5px 0 5px;
+    }
+    span{
+        padding:0 27px;
+    }
+}
+
+
+
+/*tight-top*/
+#right_top{
+    position: fixed;
+    right:0;
+    bottom:30%;
+    height:196px;
+    width:60px;
+    a img{
+        height:47px;
+        width:60px;
+        padding-bottom:2px;
+    }
+}
 
 
