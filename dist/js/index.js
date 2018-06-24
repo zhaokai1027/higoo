@@ -1,1 +1,1 @@
-"use strict";!function(){var e=document.getElementsByClassName("ej_hover")[0],n=document.getElementsByClassName("second")[0];e.onmouseover=function(){n.style.display="block"},e.onmouseout=function(){n.style.display="none"}}();
+"use strict";

@@ -29,6 +29,7 @@ header{
 .header_right>ul>li{
     padding:0 4px 0 16px;
     float: left;
+    position: relative;
 }           
 .ej_hover{
     width:68px;
@@ -40,10 +41,13 @@ header{
     text-indent: -13px;
     display: none;
 }
+.secondshow{
+     display: block;
+}
 .header_right>ul>li:nth-child(2){
     background:url(../images/maxmain.png) no-repeat -272px 7px;
 }          
-.ej:hover{
+.ej{
     box-shadow: 0 0 3px 1px #dddddd;
     >a{
         color:#e40c57;
@@ -107,6 +111,7 @@ header{
         }
         input:last-child{
             float: left;
+            cursor: pointer;
             width:57px;
             height:34px;
             border:0;
@@ -149,6 +154,7 @@ nav{
     
 }
 .leftmenu_tit{
+    cursor: pointer;
     padding-left:17px;
     line-height: 38px;
     i{
@@ -162,12 +168,12 @@ nav{
       color:#fff;  
     }
 }
-.left_nemu{
-//  display: none;
+.left_menu{
+    display: none;
    position: absolute;
    top:38px;
    width:195px;
-   height:383px;
+// height:383px;
    background:#861185;
    >div{
        border-bottom:1px solid #9c1ba0;
@@ -179,6 +185,7 @@ nav{
     border-top:0;
 }
 .daohang_biaoti{
+    cursor: pointer;
     height:18px;
     line-height: 18px;
     font-size:14px;
@@ -188,17 +195,18 @@ nav{
 }
 .daohang_neirong{
     line-height: 20px;
-    padding-right:10px;
     font-size:12px;
     a{
         color:#ffffff;
+        padding-right:9px;
+        
     }
     a:hover{
         color:#e973e8;
     }
 }
 .content{
-//  display: none;
+    display: none;
     width:845px;
     height:400px;
     position: absolute;
