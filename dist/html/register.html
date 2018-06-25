@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>嗨购网-注册</title>
 		<link rel="stylesheet" type="text/css" href="../stylesheet/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheet/login_register_cart.css"/>		
+		<script src="../plugin/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--header-->
@@ -32,9 +34,6 @@
 				</div>
 			</div>
 		</header>
-		
-		
-		
 		<!--top-->
 		<div id="top">
 			<div id="top_b">
@@ -85,7 +84,7 @@
 				
 				<div class="rightnav">
 					<ul>
-						<li><a  class="rightnav_hover" href="">首页</a></li>
+						<li><a  class="" href="">首页</a></li>
 						<li><a href="">大牌小样</a></li>
 						<li><a href="">今日抢购</a></li>
 						<li><a href="">品牌区</a></li>
@@ -94,7 +93,69 @@
 				</div>
 			</div>
 		</nav>
-		<div id="main">444</div>
+		<div id="main_register">
+			<div class="main_register_con">
+				<div class="main_register_con_left">
+					<div class="main_register_con_top">
+						<h3>用户注册</h3>
+					</div>
+					<form action="" method="post" name="registerform">
+						<div class="main_register_con_zh">
+							<label for=""><span>*</span>登陆手机：</label>
+							<input type="tel" placeholder="11位手机号"/>
+							<div class="tishi"><i>!</i><span>&nbsp;错误</span></div>
+						</div>
+						<div class="main_register_con_mm">
+							<label for=""><span>*</span>密码：</label>
+							<input type="tel" placeholder="6-20个字符,请不要输入非法字符"/>
+							<div class="mmqd">
+								<span>密码强度：&nbsp;&nbsp;&nbsp;&nbsp;
+									<b class="black hide">差</b>
+									<b class="cheng hide">弱</b>
+									<b class="huang hide">中</b>
+									<b class="green hide">强</b>
+								</span>
+								<div></div>
+							</div>
+							<div class="tishi"><i>!</i><span>&nbsp;错误</span></div>
+						</div>
+						<div class="main_register_con_qrmm">
+							<label for=""><span>*</span>确认密码：</label>
+							<input type="tel" placeholder="再次填写密码"/>
+							<div class="tishi"><i>!</i><span>&nbsp;错误</span></div>
+							
+						</div>
+						<div class="main_register_con_yzm1">
+							<label for=""><span>*</span>验证码：</label>
+							<input type="tel" placeholder="填写验证码"/>
+							<div><span class="showyzm">3245</span><span class="hgq hhh">看不清楚?换一个</span></div>
+							<div class="tishi"><i>!</i><span>&nbsp;错误</span></div>
+						</div>
+						<div class="main_register_con_yzm2">
+							<label for="">验证码：</label>
+							<input type="tel"/>
+							<input type="button" class="hqdxyzm" value="获取短信验证码"/>
+						</div>
+						<div class="main_register_con_check">
+							<input type="checkbox" checked="checked"/>&nbsp;&nbsp;我已阅读并同意&nbsp; <a href="" class="hgq">会员注册协议</a> &nbsp;和 &nbsp;<a href="" class="hgq">隐私保护政策</a>
+							<div><i>tu</i><span>请选择同意</span></div>
+						</div>
+						<div class="main_register_con_zc">
+							<input type="button" value="注    册"/>
+							<div class="main_register_con_santu">
+								<a href=""><img src="../images/weixin.png" alt="" /></a>
+								<a href=""><img src="../images/weibo.png" alt="" /></a>
+								<a href=""><img src="../images/qqlogin.png" alt="" /></a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="main_register_con_right">
+					<span>已经有会员帐号请直接登录</span>
+					<a href="">转到登陆页</a>
+				</div>
+			</div>		
+		</div>
 		<div id="bottom">
 			<div class="bottom_con">
 				<div class="bottom_con_left">
@@ -177,6 +238,6 @@
 			<a href=""><img src="../images/right1.jpg"/></a>
 		</div>
 	</body>
-	<script src="../plugin/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="../js/main.min.js" type="text/javascript" charset="utf-8"></script>
 </html>

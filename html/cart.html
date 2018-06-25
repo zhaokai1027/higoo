@@ -2,8 +2,369 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>购物车_嗨购网-海购就上嗨购！</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheet/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheet/login_register_cart.css"/>		
+		<script src="../plugin/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<!--header-->
+		<header>
+			<div class="higoo_header">
+				<div>
+					<span>您好 , 欢迎来到嗨购网！</span>
+					<a href="">登录</a>
+					<a href="">注册</a>
+				</div>
+				<div class="header_right">
+					<ul>
+						<li class="ej_hover">
+							<a href="">我的账户</a>
+							<ul class="second secondhide">
+								<li><a href="">我的订单</a></li>
+								<li><a href="">我的优惠券</a></li>
+								<li><a href="">我的积分</a></li>
+								<li><a href="">我的收藏</a></li>
+							</ul>
+						</li>
+						<li><a href="">购物车<span>0</span>件</a></li>
+						<li><a href="">客户服务</a></li>
+						<li><a href="">关注嗨购</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		
+		
+		<!--top-->
+		<div id="top">
+			<div id="top_b">
+				<div id="logo">
+					<a href="">
+						<img src="../images/logo.jpg" alt="嗨购网" />
+					</a>
+				</div>
+				
+				<div class="top_right">
+					<div class="top_right_left">
+						<div>
+							<form action="" method="post" name="form1">
+								<input type="text" placeholder="夏季防晒、美白、补水"/>
+								<input type="button" />
+							</form>
+						</div>
+						<div>
+							<a href="">爽肤水</a> |
+							<a href="">面霜</a> |
+							<a href="">洗面奶</a> |
+							<a href="">香氛</a> |
+							<a href="">眼霜</a> |
+							<a href="">唇膏</a> |
+							<a href="">护肤套装</a> |
+						</div>
+					</div>
+					
+					<div>
+						<a href="">去购物车结算</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<!--nav-->
+		<nav>
+			<div class="nav_nav">
+
+				<div class="leftmenu">
+					<div class="leftmenu_tit">
+						<i></i>
+						<a href="">全部商品分类</a>
+					</div>
+					<div class="left_menu">
+
+					</div>
+				</div>
+				
+				<div class="rightnav">
+					<ul>
+						<li><a  class="" href="">首页</a></li>
+						<li><a href="">大牌小样</a></li>
+						<li><a href="">今日抢购</a></li>
+						<li><a href="">品牌区</a></li>
+						<li><a href="">消费者告知</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="main_cart">
+			<div class="main_cart_con">
+				<div class="main_cart_con_top"></div>
+				<div class="main_cart_con_nr">	
+					<div class="kongcart_begin kongcart_hide">
+						<i></i>
+						<div class="kongcart_right">
+							<p><b>您的购物车里还没有商品</b>，您可以：</p>
+							<p>将<a href="">收藏夹</a>中的商品添加进来，或者去看看 <a href="">商城 »</a></p>
+						</div>
+					</div>
+					<div class="kongcart_now">
+						<div class="kongcart_now_top">
+							<div><i>1</i>购物车</div>
+							<span></span>
+							<div><a href=""><i>2</i>填写和提交订单信息</a></div>
+							<span></span>
+							<div><i>3</i>成功提交订单</div>
+						</div>
+						<div class="kongcart_now_conn">
+							<h3>已选择的商品</h3>
+							<form action="" method="post" name="cartform">
+								<table>
+									<thead>
+										<tr>
+											<th>
+												<input type="checkbox" />
+												<span>全选</span>
+											</th>
+											<th>商品</th>
+											<th>销售价</th>
+											<th>数量</th>
+											<th>优惠金额</th>
+											<th>积分</th>
+											<th>小计</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox" checked="checked"/></td>
+											<td>
+												<div class="shangpintu"><img src="../images/carttu.jpg" alt="" /></div>
+												<div class="shangpinhov">
+													<a href="">兰蔻 (Lancome)清滢柔肤水/兰蔻粉水 400ml</a>
+												</div>
+											</td>
+											<td><i>￥</i><span>100.00</span></td>
+											<td class="jiajian">
+												<span class="">-</span>
+												<input type="text" value="1"/>
+												<span class="">+</span>
+											</td>
+											<td class="youhuijine">
+												<i>￥</i><span>0.00</span>
+											</td>
+											<td class="jifen">-</td>
+											<td class="xjcolor"><i>￥</i><span>100.00</span></td>
+											<td>
+												<a href="">收藏</a> | <span>移除</span>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr class="kongcart_now_conn_ftop">
+											<td colspan="4">
+												<div class="youhui_btn">
+													<i>-</i>
+													<p class="youhui_show youhuijiacu"><b>您还未享受到的优惠 <a href="">凑单»</a></b></p>
+													<p class="youhui_hide">订单优惠</p>
+													<p class="youhui_xinxi"><span>[包邮]</span>全场满2种商品包邮</p>
+												</div>
+											</td>
+											<td colspan="4">
+												<div class="kongcart_now_conn_ftop_right">
+													<div><em>商品总金额：</em><span>￥100.00</span></div>
+													<div><em>订单优惠金额：</em><span>￥0.00</span></div>
+													<div><b><em class="fonthei">总金额：</em></b><span class="fontweight">￥100.00</span></div>
+												</div>
+											</td>
+										</tr>
+										<tr class="kongcart_now_conn_fbot">
+											<td colspan="4">
+												<span>清空购物车</span>
+												<span>凑单商品</span>
+											</td>
+											<td colspan="4">
+												<a href="">下单结算 ►</a>
+												<a href="">继续购物</a>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--bottom-->
+		<div id="bottom">
+			<div class="bottom_con">
+				<div class="bottom_con_left">
+					<div class="bottom_con_left1">
+						<p>在线客服</p>
+						<p>kf@higoo.com</p>
+						<p>
+							<span>4007-600-600</span><br />
+							<span>AM 08:00-PM 24:00</span>
+						</p>
+					</div>
+					<div class="bottom_con_left2">
+						<dl>
+							<dt><a href="">嗨购特色</a></dt>
+							<dd>
+								<a href="">正品保障</a>
+								<a href="">物流保障</a>
+								<a href="">绿色通关</a>
+								<a href="">护肤宝典</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="">购物指南</a></dt>
+							<dd>
+								<a href="">购物流程</a>
+								<a href="">常见问题</a>
+								<a href="">通关关税</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="">支付/配送</a></dt>
+							<dd>
+								<a href="">配送说明</a>
+								<a href="">支付方式</a>
+								<a href="">运费标准</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="">售后服务</a></dt>
+							<dd><a href="">退货政策</a></dd>
+							<dd><a href="">退货流程</a></dd>
+							<dd><a href="">退款说明</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="">关于我们</a></dt>
+							<dd>
+								<a href="">消费者告知书</a>
+								<a href="">公司简介</a>
+								<a href="">联系我们</a>
+							</dd>
+						</dl>
+						
+					</div>
+				</div>
+				<div class="bottom_con_right">
+					<p>嗨购微信</p>
+					<img src="../images/bottomWX.jpg" alt="" />
+					<p>扫一扫 品质在手</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>2013 深圳市美丽控电子商务有限公司<b>Higoo.com</b> 保留一切权利。</p>
+			<p>河南保税物流中心入驻单位（D00002）、深圳前海湾保税区入驻单位（4403660117）</p>
+			<p><span>工作时间: 9:00-18:00</span><span>客服热线：4007-600-600 </span></p>
+			<div>
+				<a href=""><img src="../images/footer1.jpg" alt="" /></a>
+				<a href=""><img src="../images/foot2.jpg" alt="" /></a>
+				<a href=""><img src="../images/foot3.jpg" alt="" /></a>
+			</div>
+			<p>ICP经营许可证:粤B2-20160253</p>
+		</footer>
+		
+		
+		<!--right-top-->
+		<div id="right_top">
+			<a href=""><img src="../images/right4.jpg"/></a>
+			<a href=""><img src="../images/right3.jpg"/></a>
+			<a href=""><img src="../images/right2.jpg"/></a>
+			<a href=""><img src="../images/right1.jpg"/></a>
+		</div>
+		<!--qingkongcartzhezhao-->
+		<div class="zhezhao zhezhaohide">
+			<div class="qkcart">
+				<p class="qkcart_tittle">友情提示</p>
+				<div class="qkcart_con">
+					<p class="qkcart_tishi">确定清空购物车吗?</p>
+					<p class="qkcart_btns">
+						<span>确定</span>
+						<span>取消</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--coudanshangpin-->
+		<div class="coudan_zhezhao">
+			<div class="coudan_con">
+				<p class="coudan_con_title">凑单商品</p>
+				<div class="coudan_con_con">
+					<div class="coudan_qujian">
+						<span>20元以下</span>
+						<span>20-50元</span>
+						<span>50-100元</span>
+					</div>
+					<div class="coudan_con_btn">
+						<span><i></i></span>
+						<span><i></i></span>
+					</div>
+					<div class="coudan_xx1">
+						<ul>
+							<li>
+								<div class="coudan_xx_left"><img src="" alt="" /></div>
+								<div class="coudan_xx_right">
+									<span>爱茉莉麦迪安</span>
+									<span>86%美白牙膏单</span>
+									<span>￥18.00</span>
+									<span>加入购物车</span>
+								</div>
+							</li>
+							<li>
+								<div class="coudan_xx_left"><img src="" alt="" /></div>
+								<div class="coudan_xx_right">
+									<span>爱茉莉麦迪安</span>
+									<span>86%美白牙膏单</span>
+									<span>￥18.00</span>
+									<span>加入购物车</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--overflowhiiden区域-->
+					<div class="coudan_xx2">
+						<div class="shujulunbo">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<br />
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="coudan_xx3">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
 	</body>
+	
+	<script src="../js/main.min.js" type="text/javascript" charset="utf-8"></script>
 </html>
+

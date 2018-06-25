@@ -151,6 +151,7 @@ nav{
     height:38px;
     position: absolute;
     background:#000;
+    z-index: 888;
     
 }
 .leftmenu_tit{
@@ -213,7 +214,7 @@ nav{
     top:0;
     left:195px;
     border-bottom:2px solid #861185;
-    background:rgba(255,255,255,.8);
+    background:rgba(255,255,255,.9);
     >div:nth-child(1),div:nth-child(2){
         width:245px;
         padding:0 17px;
@@ -260,7 +261,7 @@ nav{
     }
     >div:last-child{
         width:280px;
-        opacity: .8;
+        opacity: .9;
         float: right;
         img{
             width:280px;
@@ -300,11 +301,6 @@ nav{
 
 }
 
-
-#main{
-    min-height:600px;
-    background:pink;
-}
 #bottom{
     height:202px;
     background:#861185;
