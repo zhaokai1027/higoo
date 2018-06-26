@@ -154,6 +154,8 @@
                     padding:1px 4px;
                     border:1px solid #ccc;
                 }
+                
+                /*满足条件显示出来，移除类名*/
                 .tishi{
                     height:16px;
                     position: absolute;
@@ -163,6 +165,7 @@
                     line-height: 16px;
                     color:#666;
                     i{
+                        font-style: normal;
                         display: block;
                         width:14px;
                         height:14px;
@@ -173,6 +176,9 @@
                         line-height: 14px;
                         float: left;
                     }
+                }
+                .tishihide{
+                    display: none;
                 }
                 input:hover{
                     border:1px solid #a9a9a9;
@@ -217,6 +223,9 @@
                     height:8px;
                     background:#ddd;
                     margin-top:5px;
+                    div{
+                        height:8px;
+                    }
                 }
             }
             .cheng{
@@ -688,83 +697,345 @@
                         }
                     }
                 }
-            }
-            
-            
-            
-            
+            } 
         }
-        
-        
-        
-        
-        
-        
     }
 }
+
+.qkcart{
+    z-index:9999;
+    width:350px;
+    height:128px;
+    background:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin: auto;
+    margin-top:-64px;
+    margin-left:-175px;
+    border:3px solid #a9a9a9;
+    border-top:0;
+    .qkcart_tittle{
+        height:30px;
+        background:#a9a9a9;
+        line-height: 30px;
+        color:#fff;
+        padding-left:10px;
+        font-size:14px;
+    }
+    .qkcart_con{
+        width:320px;
+        height:68px;
+        padding:15px;
+        color:#666;
+        font-size:12px;
+        .qkcart_btns{
+            width:320px;
+            height:25px;
+            margin-top:15px;
+            margin-bottom:10px;
+            display: flex;
+            justify-content: center;
+            span:nth-child(1){
+                width:56px;
+                height:25px;
+                background:#830f83;
+                margin-right:15px;
+                color:#fff;
+                line-height: 25px;
+                text-align: center;
+            }
+            span:nth-child(2){
+                background: linear-gradient(#fefefe,#f3f3f3);
+                border:1px solid #ccc;
+                width:46px;
+                height:25px;
+                text-align: center;
+                line-height: 25px;
+            }
+            
+        }
+    }
+}
+
+.coudan_con{
+    width:960px;
+    height:330px;
+    margin:auto;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#fff;
+    z-index:9999;
+    border:1px solid #e6e6e6;
+}
+.coudan_con_title{
+    line-height: 35px;
+    height:35px;
+    padding: 0 10px;
+    background:#efefef;
+    font-size: 14px;
+    color:#666;
+    span{
+        margin-top:7px;
+        width:20px;
+        height:20px;
+        float: right;
+        background:url(../images/xxx.png) no-repeat left 0;
+        cursor: pointer;
+    }
+    span:hover{
+        background:url(../images/xxx.png) no-repeat left -25px;
+    }
+}
+.coudan_qujian{
+    width:860px;
+    height:28px;
+    border-bottom:1px solid #666;
+    padding-top:10px;
+    margin:0 auto;
+    font-size:12px;
+    color:#666;
+    span{
+        display: block;
+        float: left;
+        margin-right:10px;
+        width:91px;
+        height:28px;
+        text-align: center;
+        line-height: 28px;
+        background:#efefef;
+        cursor: pointer;
+    }
+    span:hover{
+        color:#fff;
+        background:#666;
+    }
+}
+.coudan_conbox{
+    height:256px;
+    position: relative;
+    .coudan_con_btn{
+        span{
+            width:34px;
+            height:110px;
+            background:#efefef;
+            position: absolute;
+            top:68px;
+            i{
+                width:20px;
+                height:20px;
+                margin:45px 7px;
+                display: block;
+                cursor: pointer;
+            }
+        }
+        span:first-child{
+            left:0;
+           i{
+               background:url(../images/jian1.png) no-repeat right top;
+           }
+           i:hover{
+               background:url(../images/jian1.png) no-repeat left top;
+           }
+        }
+        span:last-child{
+            right:0;
+           i{
+               background:url(../images/jian2.png) no-repeat left top;
+           }
+           i:hover{
+               background:url(../images/jian2.png) no-repeat -25px top;
+           }
+        }
+        
+    }
+    .coudan_xx1,.coudan_xx2,.coudan_xx3{
+        width:880px;
+        height:256px;
+        margin:0 auto;
+//      overflow: hidden;
+        display: none;
+        .boxbox{
+            width:1760px;
+        }
+        ul{
+            width:880px;
+            height:256px;
+            float: left;
+            li{
+                width:200px;
+                height:98px;
+                padding:15px 10px;
+                float: left;
+                img{
+                    width:96px;
+                    height:96px;
+                    cursor: pointer; 
+                }
+                >div{
+                    float: left;
+                }
+                >div:nth-child(1){
+                    width:96px;
+                    height:96px;
+                    border:1px solid #e6e6e6;
+                }
+                >div:nth-child(2){
+                    width:95px;
+                    height:98px;
+                    margin-left:7px;
+                    font-size:12px;
+                    position: relative;
+                    >p:nth-child(1){
+                        line-height:20px;
+                        a{
+                            color:#666;
+                        }
+                        a:hover{
+                            color:#026eb7;
+                        }
+                    }
+                    >p:nth-child(2){
+                        line-height:33px;
+                        color:#fe2000;
+                    }
+                    >span{
+                        color:#fff;
+                        background:#811181;
+                        display: block;
+                        width:90px;
+                        height:23px;
+                        margin:1px;
+                        text-align: center;
+                        line-height: 23px;
+                        cursor: pointer;
+                    }
+                    >span:hover{
+                        background:#d84406;
+                    }
+                    
+                /*提醒框  点span  span的父元素的find（'div'）addclass tishishow*/
+                    >div{
+                        display: none;
+                        position: absolute;
+                        background:#fff;
+                        width:298px;
+                        height:152px;
+                        z-index:10000;
+                        left:-2px;
+                        border: 1px solid #e6e6e6;
+                        box-shadow: 2px 2px 3px #ddd;
+                        >p{
+                            line-height: 35px;
+                            height:35px;
+                            padding: 0 10px;
+                            background:#efefef;
+                            font-size: 14px;
+                            text-align: left;
+                            color:#666;
+                            span{
+                                margin-top:7px;
+                                width:20px;
+                                height:20px;
+                                float: right;
+                                background:url(../images/xxx.png) no-repeat left 0;
+                                cursor: pointer;
+                            }
+                            span:hover{
+                                background:url(../images/xxx.png) no-repeat left -25px;
+                            }
+                        }
+                        >div{
+                            width:278px;
+                            height:97px;
+                            padding:10px;
+                            font-size:12px;
+                            color:#666;
+                            text-align: center;
+                            p:nth-child(1){
+                                i{
+                                    width:14px;
+                                    height:14px;
+                                    display:inline-block;
+                                    position: relative;
+                                    top:2px;
+                                    right:2px;
+                                    background:url(../images/duigou4.png) no-repeat left top;
+                                }
+                                line-height: 2;
+                                margin-bottom:16px;
+                               span{
+                                   color:#d92626;
+                               }
+                               span:last-of-type{
+                                   color:red;
+                               }                     
+                            }
+                            p:nth-child(2){
+                                height:25px;
+                                font-size: inherit;
+                                display: flex;
+                                justify-content: center;
+                                span{
+                                    background: linear-gradient(#fefefe,#f3f3f3);
+                                    border:1px solid #ccc;
+                                    width:68px;
+                                    height:23px;
+                                    text-align: center;
+                                    line-height: 23px;
+                                    cursor: pointer;
+                                    
+                                }
+                                span:hover{
+                                    background:#e9e9e9;
+                                }
+                                a{
+                                    width:90px;
+                                    height:23px;
+                                    background:#830f83;
+                                    margin-left:4px;
+                                    color:#fff;
+                                    line-height: 23px;
+                                    text-align: center;
+                                    border:1px solid transparent;
+                                }
+                                a:hover{
+                                    background:#d84406;
+                                }
+                            } 
+                        }
+                    }
+                    .tishishow{
+                        display: block;
+                    }
+  
+                }
+            }
+        }
+    }
+    .coudan_xxshow{
+        display:block;
+    }
+    
+}
+
+
+
 .zhezhao{
     position: fixed;
     top:0;
     left:0;
     width:100%;
     height:100%;
-    background:rgba(255,255,255,.7);
-    z-index: 100001;
-    .qkcart{
-        width:350px;
-        height:128px;
-        background:#fff;
-        position: absolute;
-        top:50%;
-        left:50%;
-        margin: auto;
-        margin-top:-64px;
-        margin-left:-175px;
-        border:3px solid #a9a9a9;
-        border-top:0;
-        .qkcart_tittle{
-            height:30px;
-            background:#a9a9a9;
-            line-height: 30px;
-            color:#fff;
-            padding-left:10px;
-            font-size:14px;
-        }
-        .qkcart_con{
-            width:320px;
-            height:68px;
-            padding:15px;
-            color:#666;
-            font-size:12px;
-            .qkcart_btns{
-                width:320px;
-                height:25px;
-                margin-top:15px;
-                margin-bottom:10px;
-                display: flex;
-                justify-content: center;
-                span:nth-child(1){
-                    width:56px;
-                    height:25px;
-                    background:#830f83;
-                    margin-right:15px;
-                    color:#fff;
-                    line-height: 25px;
-                    text-align: center;
-                }
-                span:nth-child(2){
-                    background: linear-gradient(#fefefe,#f3f3f3);
-                    border:1px solid #ccc;
-                    width:46px;
-                    height:25px;
-                    text-align: center;
-                    line-height: 25px;
-                }
-                
-            }
-        }
-    }
+    background:rgba(51,51,51,.7);
+    z-index:8888;
 }
-.zhezhaohide{
+
+
+//控制遮罩清空凑单
+.zhezhaohide,.qkcarthide,.coudan_con{
     display:none;
 }

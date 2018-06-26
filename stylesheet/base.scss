@@ -386,12 +386,6 @@ nav{
     }
 }
 
-
-
-
-
-
-
 footer{
     height:140px;
     padding:30px 0 20px;
@@ -409,11 +403,10 @@ footer{
     }
 }
 
-
-
 /*tight-top*/
 #right_top{
     position: fixed;
+    z-index:100;
     right:0;
     bottom:30%;
     height:196px;
