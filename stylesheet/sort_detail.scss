@@ -75,7 +75,8 @@
                     padding-left:51px;
                     height:25px;
                     margin-bottom:15px;
-                    input{
+                    position: relative;
+                    >input{
                         width:20px;
                         height:19px;
                         border:0;
@@ -86,16 +87,16 @@
                         top:1px;
                         padding-left:10px;
                     }
-                    span:nth-of-type(1),span:nth-of-type(2){
+                    >span:nth-of-type(1),span:nth-of-type(2){
                         position: relative;
                         top:1px;
                         
                     }
-                    span:nth-of-type(1):hover,span:nth-of-type(2):hover{
+                    >span:nth-of-type(1):hover,span:nth-of-type(2):hover{
                         background:#666;
                         color:#fff;
                     }
-                    span{
+                    >span{
                         float: left;
                         width:20px;
                         height:21px;
@@ -105,7 +106,7 @@
                         cursor: pointer;
                         color:#8b8b8b;
                     }
-                    span:nth-of-type(3){
+                    >span:nth-of-type(3){
                         position: relative;
                         top:1px;
                         border-color:transparent;
@@ -116,9 +117,134 @@
                         background:#811181;
                         color:#fff;
                     }
-                    span:nth-of-type(3):hover{
+                    >span:nth-of-type(3):hover{
                         background:#e8520e;
                     }
+                    >div{
+                        display: none;
+                        position: absolute;
+                        background:#fff;
+                        width:298px;
+                        height:152px;
+                        z-index:10000;
+                        left:140px;
+                        top:27px;
+                        border: 1px solid #e6e6e6;
+                        box-shadow: 2px 2px 3px #ddd;
+                        >p{
+                            line-height: 35px;
+                            height:35px;
+                            padding: 0 10px;
+                            background:#efefef;
+                            font-size: 14px;
+                            text-align: left;
+                            color:#666;
+                            span{
+                                margin-top:7px;
+                                width:20px;
+                                height:20px;
+                                float: right;
+                                background:url(../images/xxx.png) no-repeat left 0;
+                                cursor: pointer;
+                            }
+                            span:hover{
+                                background:url(../images/xxx.png) no-repeat left -25px;
+                            }
+                        }
+                        >div{
+                            width:278px;
+                            height:97px;
+                            padding:10px;
+                            font-size:12px;
+                            color:#666;
+                            text-align: center;
+                            p:nth-child(1){
+                                i{
+                                    width:14px;
+                                    height:14px;
+                                    display:inline-block;
+                                    position: relative;
+                                    top:2px;
+                                    right:2px;
+                                    background:url(../images/duigou4.png) no-repeat left top;
+                                }
+                                line-height: 2;
+                                margin-bottom:16px;
+                               span{
+                                   color:#d92626;
+                               }
+                               span:last-of-type{
+                                   color:red;
+                               }                     
+                            }
+                            p:nth-child(2){
+                                height:25px;
+                                font-size: inherit;
+                                display: flex;
+                                justify-content: center;
+                                span{
+                                    background: linear-gradient(#fefefe,#f3f3f3);
+                                    border:1px solid #ccc;
+                                    width:68px;
+                                    height:23px;
+                                    text-align: center;
+                                    line-height: 23px;
+                                    cursor: pointer;
+                                    
+                                }
+                                span:hover{
+                                    background:#e9e9e9;
+                                }
+                                a{
+                                    width:90px;
+                                    height:23px;
+                                    background:#830f83;
+                                    margin-left:4px;
+                                    color:#fff;
+                                    line-height: 23px;
+                                    text-align: center;
+                                    border:1px solid transparent;
+                                }
+                                a:hover{
+                                    background:#d84406;
+                                }
+                            } 
+                        }
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 }
                 
                 .sort_scdb{

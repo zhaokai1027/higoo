@@ -99,6 +99,25 @@
             }
         }    
     }  
+    .denglushibai,.dengluchenggong{
+        width:300px;
+        height:60px;
+        border:1px solid #666;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        background:#fff;
+        line-height:60px;
+        text-align: center;
+        color:#666;
+    }
+    .dengluhide{
+        display: none;
+    }
+    
 }
 /*register*/
 #main_register{
@@ -195,6 +214,7 @@
                     width:80px;
                 }
                 .hqdxyzm{
+                    cursor: pointer;
                     margin:0 3px;
                     width:130px;
                     height:29px;
@@ -226,13 +246,26 @@
                     div{
                         height:8px;
                     }
+                    .ruo{
+                        background:#ff2626;
+                        width:30px;
+                    }
+                    .zhong{
+                        background:#ff9326;
+                        width:60px;
+                    }
+                    .qiang{
+                        background:#00d900;
+                        width:110px;
+                    }
+                    
                 }
             }
             .cheng{
                 color:#ff2626;
             }
             .huang{
-                color:#ff2626;
+                color:#ff9326;
             }
             .green{
                 color:#00d900;
@@ -271,6 +304,7 @@
                     text-align: center;
                     border:0;
                     margin-left:145px;
+                    cursor: pointer;
                 }
                 input:hover{
                     background:#e2232c;
@@ -321,6 +355,29 @@
                 background:#e2232c;
             }
         }
+    }
+    .tanchuang,.shibai1,.shibai2{
+        width:300px;
+        height:60px;
+        padding:20px 0;
+        background:#fff;
+        border:1px solid #666;
+        color:#666;
+        font-size:14px;
+        text-align:center;
+        line-height: 2;
+        position: fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        margin: auto;
+    }
+    .shibai1,.shibai2{
+        line-height: 60px;
+    }
+    .tanchuang_hide{
+        display: none;
     }
 }
 

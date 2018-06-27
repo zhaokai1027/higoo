@@ -14,7 +14,6 @@
                     height:400px;
                     position: absolute;
                     opacity: 1;
-                    z-index: 1;
                     a{
                         width:1000px;
                         height:400px;
@@ -28,7 +27,6 @@
                 }
                 li:nth-child(2){
                     background:url(../images/banner2.jpg) no-repeat center;
-                    z-index: 2;
                 }
                 li:nth-child(3){
                     background:url(../images/banner3.jpg) no-repeat center;
@@ -48,6 +46,10 @@
                 float: left;
                 margin:0 3px;
                 border-radius: 50%;
+                cursor: pointer;
+            }
+            .anniuinde{
+                background:#4063a7;
             }
             span:hover{
                 background:#4063a7;
@@ -57,7 +59,7 @@
     .guodu{
         height:70px;
         width:1200px;
-        margin:0 auto;
+        margin:0 auto 40px;
         border-bottom:1px solid #f2f2f2;
         padding:2px 0;
         margin-top:10px;
@@ -71,12 +73,15 @@
         margin:0 auto;
         margin-top:55px;
         overflow: hidden;
+        position: relative;
         .slideshow_box{
             height:250px;
+            position: absolute;
             li{
                 width:200px;
                 height:250px;
-                padding-left:60px;
+                padding-left:37px;
+                float: left;
                 img{
                     width:150px;
                     height:150px;
@@ -109,8 +114,8 @@
             }
         }
         .slideshow_box_btn{
-           position: relative;
            span{
+               z-index:100;
                display: block;
                position: absolute;
                width:29px;
@@ -160,11 +165,11 @@
                     cursor: pointer;
                     padding:0 12px;
                 }
-                span:hover{
+                .spanspan,span:hover{
                     font-weight: bold;
                     border-bottom:2px solid #e40c57;
                 }
-                span:hover i{
+                .spani,span:hover i{
                     position: absolute;
                     display: block;
                     margin-left:20px;
@@ -207,6 +212,10 @@
                         border:1px solid #efefef;
                         border-top:0;
                         float:left;
+                        img{
+                            width:198px;
+                            height:390px;
+                        }
                     } 
                 }
                 ul:nth-child(2){
@@ -378,10 +387,11 @@
     }
     .care_con_right{
         width:860px;
+        height:435px;
         div{
             float: left;
         }
-        .pic_two{
+        div:nth-child(1),div:nth-child(2),div:nth-child(4){
             width:210px;
             height:435px;
             a{
@@ -390,18 +400,30 @@
             a:nth-of-type(1){
                 height:265px;
                 border-bottom:1px dotted black;
+                img{
+                   width:210px; 
+                   height:265px;
+                }
             }
             a:nth-of-type(2){
                 height:170px;
+                img{
+                    width:210px;
+                    height:170px;
+                }
             }
         }
-        .pic_two:nth-of-type(1){
+        div:nth-child(1){
             border-right:1px dotted #000;
         }
-        .pic_one{
+        div:nth-child(3){
             width:215px;
             height:435px;
             padding: 0 6.5px;
+            img{
+                 width:215px;
+                height:435px;
+            }
         }
     }
     .care2_top_border{

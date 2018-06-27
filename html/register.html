@@ -13,8 +13,8 @@
 			<div class="higoo_header">
 				<div>
 					<span>您好 , 欢迎来到嗨购网！</span>
-					<a href="">登录</a>
-					<a href="">注册</a>
+					<a href="login.html">登录</a>
+					<a href="register.html">注册</a>
 				</div>
 				<div class="header_right">
 					<ul>
@@ -27,7 +27,7 @@
 								<li><a href="">我的收藏</a></li>
 							</ul>
 						</li>
-						<li><a href="">购物车<span>0</span>件</a></li>
+						<li><a href="cart.html">购物车<span>0</span>件</a></li>
 						<li><a href="">客户服务</a></li>
 						<li><a href="">关注嗨购</a></li>
 					</ul>
@@ -38,7 +38,7 @@
 		<div id="top">
 			<div id="top_b">
 				<div id="logo">
-					<a href="">
+					<a href="index.html">
 						<img src="../images/logo.jpg" alt="嗨购网" />
 					</a>
 				</div>
@@ -63,7 +63,7 @@
 					</div>
 					
 					<div>
-						<a href="">去购物车结算</a>
+						<a href="cart.html">去购物车结算</a>
 					</div>	
 				</div>
 			</div>
@@ -102,61 +102,72 @@
 					<form action="" method="post" name="registerform">
 						<div class="main_register_con_zh">
 							<label for=""><span>*</span>登陆手机：</label>
-							<input type="tel" placeholder="11位手机号"/>
+							<input type="text" id="zh" placeholder="11位手机号"/>
 							<div class="tishi tishihide"><i>!</i><span>&nbsp;错误</span></div>
 						</div>
 						<div class="main_register_con_mm">
 							<label for=""><span>*</span>密码：</label>
-							<input type="tel" placeholder="6-20个字符,请不要输入非法字符"/>
+							<input type="password" id="mm" placeholder="6-20个字符,请不要输入非法字符"/>
 							<div class="mmqd">
 								<span>密码强度：&nbsp;&nbsp;&nbsp;&nbsp;
-									<b class="black hide">差</b>
 									<b class="cheng hide">弱</b>
 									<b class="huang hide">中</b>
 									<b class="green hide">强</b>
 								</span>
 								<div>
-									<div></div>
+									<div class="ruo hide"></div>
+									<div class="zhong hide"></div>
+									<div class="qiang hide"></div>
 								</div>
 							</div>
 							<div class="tishi tishihide"><i>!</i><span>&nbsp;错误</span></div>
 						</div>
 						<div class="main_register_con_qrmm">
 							<label for=""><span>*</span>确认密码：</label>
-							<input type="tel" placeholder="再次填写密码"/>
+							<input type="password" placeholder="再次填写密码"/>
 							<div class="tishi tishihide"><i>!</i><span>&nbsp;错误</span></div>
 							
 						</div>
 						<div class="main_register_con_yzm1">
 							<label for=""><span>*</span>验证码：</label>
-							<input type="tel" placeholder="填写验证码"/>
+							<input type="text" placeholder="填写验证码"/>
 							<div><span class="showyzm">3245</span><span class="hgq hhh">看不清楚?换一个</span></div>
 							<div class="tishi tishihide"><i>!</i><span>&nbsp;错误</span></div>
 						</div>
 						<div class="main_register_con_yzm2">
 							<label for="">验证码：</label>
-							<input type="tel"/>
+							<input type="text"/>
 							<input type="button" class="hqdxyzm" value="获取短信验证码"/>
 						</div>
 						<div class="main_register_con_check">
 							<input type="checkbox" checked="checked"/>&nbsp;&nbsp;我已阅读并同意&nbsp; <a href="" class="hgq">会员注册协议</a> &nbsp;和 &nbsp;<a href="" class="hgq">隐私保护政策</a>
-							<div><i>tu</i><span>请选择同意</span></div>
+							<!--<div><i>tu</i><span>请选择同意</span></div>-->
 						</div>
 						<div class="main_register_con_zc">
 							<input type="button" value="注    册"/>
 							<div class="main_register_con_santu">
-								<a href=""><img src="../images/weixin.png" alt="" /></a>
-								<a href=""><img src="../images/weibo.png" alt="" /></a>
-								<a href=""><img src="../images/qqlogin.png" alt="" /></a>
+								<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx77ba621cc1c7e2fb&response_type=code&scope=snsapi_login&redirect_uri=http%3A%2F%2Fwww.higoo.com%2Fopenapi%2Ftrustlogin_api%2Fparse%2Ftrustlogin_plugin_weixin%2Fcallback%2F&state=9d2e150f58b7c3ad837cd3412e436d8a"><img src="../images/weixin.png" alt="" /></a>
+								<a href="https://api.weibo.com/oauth2/authorize?client_id=2560078367&redirect_uri=http%3A%2F%2Fwww.higoo.com%2Fopenapi%2Ftrustlogin_api%2Fparse%2Ftrustlogin_plugin_weibo%2Fcallback%2F&state=e64c5842d9aa598465db277614e308dd"><img src="../images/weibo.png" alt="" /></a>
+								<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=100253495&redirect_uri=http%3A%2F%2Fwww.higoo.com%2Fopenapi%2Ftrustlogin_api%2Fparse%2Ftrustlogin_plugin_qq%2Fcallback%2F&state=a030a5087701051f32281402fc2f4399"><img src="../images/qqlogin.png" alt="" /></a>
 							</div>
 						</div>
 					</form>
 				</div>
 				<div class="main_register_con_right">
 					<span>已经有会员帐号请直接登录</span>
-					<a href="">转到登陆页</a>
+					<a href="login.html">转到登陆页</a>
 				</div>
-			</div>		
+			</div>
+			<div class="tanchuang tanchuang_hide">
+				<p>恭喜，注册成功!</p>
+				<p>即将跳转至登陆页</p>
+			</div>
+			<div class="shibai1 tanchuang_hide">
+				注册失败，请重新注册。
+			</div>
+			<div class="shibai2 tanchuang_hide">
+				用户名重名，请重新注册。
+			</div>
 		</div>
 		<div id="bottom">
 			<div class="bottom_con">
@@ -234,8 +245,8 @@
 		
 		<!--right-top-->
 		<div id="right_top">
-			<a href=""><img src="../images/right4.jpg"/></a>
-			<a href=""><img src="../images/right3.jpg"/></a>
+			<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA0ODU0NV8yNDIxMTNfNDAwNzYwMDYwMF8yXw"><img src="../images/right4.jpg"/></a>
+			<a href="cart.html"><img src="../images/right3.jpg"/></a>
 			<a href=""><img src="../images/right2.jpg"/></a>
 			<a href=""><img src="../images/right1.jpg"/></a>
 		</div>
