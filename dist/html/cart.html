@@ -13,8 +13,8 @@
 			<div class="higoo_header">
 				<div>
 					<span>您好 , 欢迎来到嗨购网！</span>
-					<a href="">登录</a>
-					<a href="">注册</a>
+					<a href="login.html">登录</a>
+					<a href="register.html">注册</a>
 				</div>
 				<div class="header_right">
 					<ul>
@@ -27,7 +27,7 @@
 								<li><a href="">我的收藏</a></li>
 							</ul>
 						</li>
-						<li><a href="">购物车<span>0</span>件</a></li>
+						<li><a href="cart.html">购物车<span>0</span>件</a></li>
 						<li><a href="">客户服务</a></li>
 						<li><a href="">关注嗨购</a></li>
 					</ul>
@@ -41,7 +41,7 @@
 		<div id="top">
 			<div id="top_b">
 				<div id="logo">
-					<a href="">
+					<a href="index.html">
 						<img src="../images/logo.jpg" alt="嗨购网" />
 					</a>
 				</div>
@@ -66,7 +66,7 @@
 					</div>
 					
 					<div>
-						<a href="">去购物车结算</a>
+						<a href="cart.html">去购物车结算</a>
 					</div>	
 				</div>
 			</div>
@@ -104,14 +104,14 @@
 						<i></i>
 						<div class="kongcart_right">
 							<p><b>您的购物车里还没有商品</b>，您可以：</p>
-							<p>将<a href="">收藏夹</a>中的商品添加进来，或者去看看 <a href="">商城 »</a></p>
+							<p>将<a href="">收藏夹</a>中的商品添加进来，或者去看看 <a href="index.html">商城 »</a></p>
 						</div>
 					</div>
 					<div class="kongcart_now kongcart_hide">
 						<div class="kongcart_now_top">
 							<div><i>1</i>购物车</div>
 							<span></span>
-							<div><a href=""><i>2</i>填写和提交订单信息</a></div>
+							<div><a href="http://www.higoo.com/cart-checkout.html"><i>2</i>填写和提交订单信息</a></div>
 							<span></span>
 							<div><i>3</i>成功提交订单</div>
 						</div>
@@ -122,7 +122,7 @@
 									<thead>
 										<tr>
 											<th>
-												<input type="checkbox" />
+												<input id="quanxuanla" type="checkbox" />
 												<span>全选</span>
 											</th>
 											<th>商品</th>
@@ -135,29 +135,7 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td><input type="checkbox" checked="checked"/></td>
-											<td>
-												<div class="shangpintu"><img src="../images/carttu.jpg" alt="" /></div>
-												<div class="shangpinhov">
-													<a href="">兰蔻 (Lancome)清滢柔肤水/兰蔻粉水 400ml</a>
-												</div>
-											</td>
-											<td><i>￥</i><span>100.00</span></td>
-											<td class="jiajian">
-												<span class="">-</span>
-												<input type="text" value="1"/>
-												<span class="">+</span>
-											</td>
-											<td class="youhuijine">
-												<i>￥</i><span>0.00</span>
-											</td>
-											<td class="jifen">-</td>
-											<td class="xjcolor"><i>￥</i><span>100.00</span></td>
-											<td>
-												<a href="">收藏</a> | <span>移除</span>
-											</td>
-										</tr>
+
 									</tbody>
 									<tfoot>
 										<tr class="kongcart_now_conn_ftop">
@@ -171,20 +149,18 @@
 											</td>
 											<td colspan="4">
 												<div class="kongcart_now_conn_ftop_right">
-													<div><em>商品总金额：</em><span>￥100.00</span></div>
-													<div><em>订单优惠金额：</em><span>￥0.00</span></div>
-													<div><b><em class="fonthei">总金额：</em></b><span class="fontweight">￥100.00</span></div>
+
 												</div>
 											</td>
 										</tr>
 										<tr class="kongcart_now_conn_fbot">
 											<td colspan="4">
-												<span>清空购物车</span>
-												<span>凑单商品</span>
+												<span class="qingkongni">清空购物车</span>
+												<span class="wolaibu">凑单商品</span>
 											</td>
 											<td colspan="4">
 												<a href="">下单结算 ►</a>
-												<a href="">继续购物</a>
+												<a href="index.html">继续购物</a>
 											</td>
 										</tr>
 									</tfoot>
@@ -273,7 +249,7 @@
 		<!--right-top-->
 		<div id="right_top">
 			<a href=""><img src="../images/right4.jpg"/></a>
-			<a href=""><img src="../images/right3.jpg"/></a>
+			<a href="cart.html"><img src="../images/right3.jpg"/></a>
 			<a href=""><img src="../images/right2.jpg"/></a>
 			<a href=""><img src="../images/right1.jpg"/></a>
 		</div>
@@ -285,18 +261,18 @@
 			<div class="qkcart_con">
 				<p class="qkcart_tishi">确定清空购物车吗?</p>
 				<p class="qkcart_btns">
-					<span>确定</span>
-					<span>取消</span>
+					<span class="quedingle">确定</span>
+					<span class="diancuole">取消</span>
 				</p>
 			</div>
 		</div>
 		
 		
 		<!--coudanshangpin-->
-		<div class="coudan_con">
+		<div class="coudan_con coudan_conhide">
 			<p class="coudan_con_title">凑单商品<span></span></p>
 			<div class="coudan_qujian">
-				<span>20元以下</span>
+				<span class="huisede">20元以下</span>
 				<span>20-50元</span>
 				<span>50-100元</span>
 			</div>
@@ -306,102 +282,25 @@
 					<span><i></i></span>
 				</div>
 			
-				<div class="coudan_xx1 coudan_xxshow">
+				<div class="coudan_xxx coudan_xxshow">
 					<div class="boxbox">
 						<ul>
-							<li>
-								<div><img src="../images/coudan1.jpg" alt="" /></div>
-								<div>
-									<p><a href="">爱茉莉麦迪安 86%美白牙膏单</a></p>
-									<p>￥18.00</p>
-									<span>加入购物车
-										
-										
-										
-										
-									</span>
-									<!--cartsuccess-->
-									<!--addclass  tishishow-->
-									<div class="">
-										<p>提醒<span></span></p>
-										<div>
-											<p>
-												<i></i> 加入购物车成功。<br />
-												目前选购商品共<span> 7</span> 种<span> 14</span> 件。合计：<span>￥370.00</span>
-											</p>
-											<p>
-												<span>继续购物</span>
-												<a href="">进入购物车</a>
-											</p>
-										</div>
-									</div>
-								</div>
-								
-							</li>
-							<li>
-								<div class="coudan_xx_left"><img src="../images/coudan1.jpg" alt="" /></div>
-								<div class="coudan_xx_right">
-									<p><a href="">爱茉莉麦迪安 86%美白牙膏单</a></p>
-									<p>￥18.00</p>
-									<span>加入购物车</span>
-								</div>
-							</li>
-							<li>
-								<div class="coudan_xx_left"><img src="../images/coudan1.jpg" alt="" /></div>
-								<div class="coudan_xx_right">
-									<p><a href="">爱茉莉麦迪安 86%美白牙膏单</a></p>
-									<p>￥18.00</p>
-									<span>加入购物车</span>
-								</div>
-							</li>
-							<li>
-								<div class="coudan_xx_left"><img src="../images/coudan1.jpg" alt="" /></div>
-								<div class="coudan_xx_right">
-									<p><a href="">爱茉莉麦迪安 86%美白牙膏单</a></p>
-									<p>￥18.00</p>
-									<span>加入购物车</span>
-								</div>
-							</li>
-							<li>
-								<div class="coudan_xx_left"><img src="../images/coudan1.jpg" alt="" /></div>
-								<div class="coudan_xx_right">
-									<p><a href="">爱茉莉麦迪安 86%美白牙膏单</a></p>
-									<p>￥18.00</p>
-									<span>加入购物车</span>
-								</div>
-							</li>
+
 						</ul>
-						<ul></ul>
+							
 					</div>
 				</div>
 				<!--overflowhiiden区域-->
-				<div class="coudan_xx2">
-					<div class="shujulunbo">
+				<div class="coudan_xxx">
+					<div class="boxbox">
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<br />
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+
 						</ul>
 					</div>
 				</div>
-				<div class="coudan_xx3">
+				<div class="coudan_xxx">
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+
 					</ul>
 				</div>
 			</div>
@@ -410,7 +309,7 @@
 		
 		
 	</body>
-	
+	<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 	<script src="../js/main.min.js" type="text/javascript" charset="utf-8"></script>
 </html>
 

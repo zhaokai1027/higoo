@@ -39,6 +39,12 @@
 			$(this).next().addClass('tishihide');
 		}
 	});
+	
+	$(window).ready(function(){
+		$('.showyzm').text(Math.floor(Math.random()*10000));
+	});
+	
+	
 	$('.hgq').click(function(){
 		$(this).siblings().text(Math.floor(Math.random()*10000));
 	});

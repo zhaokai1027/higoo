@@ -128,3 +128,18 @@ $('.tab_btn>span').mouseover(function(){
 	});
 })
 
+
+var str02 = `<span>您好 , 欢迎来到嗨购网！</span>
+					<a href="login.html">登录</a>
+					<a href="register.html">注册</a>`;
+if($.cookie('username') != undefined){
+	var str01 = `<span>您好 ,${$.cookie('username')}</span>
+					<a href="login.html">退出</a>`;
+	$('.higoo_header').find('div').eq(0).html(str01);
+	$('.higoo_header').find('div').eq(0).find('a').click(function(){
+		$('.higoo_header').find('div').eq(0).html(str02);
+		$.removeCookie('username',{path:'/'});
+	})
+}else{
+	$('.higoo_header').find('div').eq(0).html(str02);
+}

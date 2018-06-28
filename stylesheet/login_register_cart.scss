@@ -426,13 +426,14 @@
                 }
             }
         }
-        .kongcart_show{
-            display: block;
-        }
+//      .kongcart_show{
+//         
+//      }
         .kongcart_hide{
             display: none;
         }        
         .kongcart_now{
+             display: block;
             .kongcart_now_top{
                 height:30px;
                 margin:20px 0;
@@ -600,16 +601,13 @@
                                 }
                             }
                             .shangpinhov{
+                                height:100px;
                                 width:320px;
                                 float: left;
                                
                             }
                         }
-                        
-                        
-                        
-                        
-                        
+
                     }
                     tfoot{
                         .kongcart_now_conn_fbot{
@@ -866,7 +864,7 @@
         background:#efefef;
         cursor: pointer;
     }
-    span:hover{
+    .huisede,span:hover{
         color:#fff;
         background:#666;
     }
@@ -909,17 +907,18 @@
         }
         
     }
-    .coudan_xx1,.coudan_xx2,.coudan_xx3{
+    .coudan_xxx{
         width:880px;
         height:256px;
         margin:0 auto;
-//      overflow: hidden;
         display: none;
+        position: relative;
+        overflow: hidden;
         .boxbox{
-            width:1760px;
+           position: absolute;
         }
         ul{
-            width:880px;
+            
             height:256px;
             float: left;
             li{
@@ -945,7 +944,7 @@
                     height:98px;
                     margin-left:7px;
                     font-size:12px;
-                    position: relative;
+                    
                     >p:nth-child(1){
                         line-height:20px;
                         a{
@@ -982,7 +981,8 @@
                         width:298px;
                         height:152px;
                         z-index:10000;
-                        left:-2px;
+                        left:250px;
+                        bottom:50px;
                         border: 1px solid #e6e6e6;
                         box-shadow: 2px 2px 3px #ddd;
                         >p{
@@ -1076,10 +1076,7 @@
     .coudan_xxshow{
         display:block;
     }
-    
 }
-
-
 
 .zhezhao{
     position: fixed;
@@ -1093,6 +1090,6 @@
 
 
 //控制遮罩清空凑单
-.zhezhaohide,.qkcarthide,.coudan_con{
+.zhezhaohide,.qkcarthide,.coudan_conhide{
     display:none;
 }

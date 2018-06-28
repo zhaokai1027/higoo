@@ -15,7 +15,7 @@ $(".loginform_dl input").click(function(){
 			},2000)
 		}else{
 			$('.dengluchenggong').removeClass('dengluhide');
-			$.cookie("username",data.userID,{expires:14,path:"/"});
+			$.cookie("username",data.userID,{expires:14,path:'/'});
 			setTimeout(function(){
 			location.href = "index.html";
 			},2000)
