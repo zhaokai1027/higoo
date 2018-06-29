@@ -60,6 +60,28 @@ $('.leftmenu').mouseover(function(){
 $('.leftmenu').mouseout(function(){
 	$('.left_menu').css('display','none');
 
-})	
+})
+
+
+
+
+
+var numbera = 0;
+$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?",{userID:$.cookie("username")},function(data){
+	$.each(data, function(index,item) {
+		numbera += Number(item.number);
+	});
+	$('.shizhongshow').html(numbera);
+})
+
+
+
+
+
+
+
+
+
+
 
 })();
